@@ -56,7 +56,7 @@ function Navbar({ profile, logout }) {
                         data-dropdown-toggle="userDropdown"
                         data-dropdown-placement="bottom-start"
                         src="./img/icon/user.png"
-                        className="w-10 h-10 rounded-full cursor-pointer"
+                        className="w-10 h-10 rounded-full cursor-pointer "
                         alt="User dropdown"
                         onClick={toggleDropdown}
                     />) : profile}
@@ -511,118 +511,53 @@ const Profile = () => {
 };
 
 function Footer() {
-    return (<footer class="bg-white dark:bg-gray-900">
-            <div class="container px-6 py-12 mx-auto">
-                <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-                    <div class="sm:col-span-2">
-                        <h1 class="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">Subscribe our newsletter to get update.</h1>
-        
-                        <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
-                            <input id="email" type="text" class="px-3 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Email Address">
-                    
-                            <button class="w-full px-4 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-                                Subscribe
-                            </button>
-                        </div>
-                        <br>
-                        <div class="aspect-w-27 aspect-h-15" id="ytframe">
-                            <iframe width="400px" height="250px" src="https://www.youtube.com/embed/r9jwGansp1E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                          </div>
-                    </div>
-                    
-                    <!-- 1 -->
-                    <div>
-                        <br>
-                        <p class="font-semibold text-gray-800 dark:text-white" id="footertext">Quick Link</p>
-        
-                        <div class="flex flex-col  items-start mt-5 space-y-2" id="footertext">
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500" id="footertext">Home</a>
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500" id="footertext">About us</a>
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500" id="footertext">Our Visi and Misi</a>
-                        </div>
-                        <br>
-                        <br>
-                        <!-- 2 -->
-                        <div>
-                            <p class="font-semibold text-gray-800 dark:text-white" id="footertext">Club & Activity</p>
-            
-                            <div class="flex flex-col items-start mt-5 space-y-2" id="footertext">
-                                <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500" id="footertext">IT Club</a>
-                                <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500" id="footertext">Photography</a>
-                                <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500" id="footertext">English</a>
-                            </div>
-                        </div>
-                    </div>
-        
-                    
-                    <!-- 3 -->
-                    <div>
-                        <br>
-                        <p class="font-semibold text-gray-800 dark:text-white"  id="footertext">Contact us</p>
-        
-                        <div class="flex flex-col items-start mt-5 space-y-2"  id="footertext">
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500" id="footertext">Gmail</a>
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500" id="footertext">Whatsapp</a>
-                            <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500" id="footertext">Instagram</a>
-                        </div>
-        
-                        <!-- 4 -->
-                        <br>
-                        <br>
-                        <div>
-                            
-                            <p class="font-semibold text-gray-800 dark:text-white" id="footertext">Other Resources</p>
-            
-                            <div class="flex flex-col items-start mt-5 space-y-2"  id="footertext">
-                                <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500" id="footertext">Terms & Use</a>
-                                <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500" id="footertext">Privacy Policy</a>
-                                <a href="#" class="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"id="footertext">FAQs</a>
-                            </div>
-                        </div>
-        
-                    </div>
-                </div>
-                
-                
-                <hr class="my-6 border-gray-200 md:my-8 dark:border-gray-700">
-                
-                <div class="flex items-center justify-between">
-                    <a href="#">
-                        <img class="w-auto h-24" src="img/SMK_BUDDHI-namebg-removebg-preview.png" alt="" id="logofoote">
-                    </a>
-        
-                    
-                    <div class="flex -mx-2">
-                        <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Youtube">
-                            <svg class="w-5 h-5 fill-current" viewBox="0 0 50 50" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z">
-                                </path>
-                            </svg>
-                        </a>
-        
-                        <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Facebook">
-                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
-                                </path>
-                            </svg>
-                        </a>
-        
-                        <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Github">
-                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
-                                </path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+    return (<div className="container mx-auto bg-rose-700">
+        <div className="flex items-center justify-between">
+            <a href="/">
+                <img className="w-auto h-24"
+                    src="img/logo/SMK-BUDDHI.png" alt="Buddhi"
+                    id="logofoote" />
+            </a>
+
+            <div className="flex -mx-2">
+                <a href="/"
+                    className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                    aria-label="Youtube">
+                    <svg className="w-5 h-5 fill-current"
+                        viewBox="0 0 50 50" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z">
+                        </path>
+                    </svg>
+                </a>
+
+                <a href="/"
+                    className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                    aria-label="Facebook">
+                    <svg className="w-5 h-5 fill-current"
+                        viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
+                        </path>
+                    </svg>
+                </a>
+
+                <a href="/"
+                    className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                    aria-label="Github">
+                    <svg className="w-5 h-5 fill-current"
+                        viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                        </path>
+                    </svg>
+                </a>
             </div>
-        </footer>)
+        </div>
+    </div>)
 }
 
 
